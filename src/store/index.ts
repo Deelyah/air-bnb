@@ -1,9 +1,12 @@
 import { InjectionKey } from "vue";
 import { createStore, Store } from "vuex";
 
+interface IGenCode {
+  link: string;
+}
 // define your typings for the store state
 export interface State {
-  count: number;
+  generatedCodes: IGenCode[];
 }
 
 // @ts-ignore
@@ -15,12 +18,8 @@ export const store = createStore<State>({
   },
 
   mutations: {
-    createCode(state, payload: {}) {
-      console.log("first");
-
+    createCode(state, payload: IGenCode) {
       state.generatedCodes.push(payload);
-
-      console.log(state.generatedCodes);
     },
   },
 });
