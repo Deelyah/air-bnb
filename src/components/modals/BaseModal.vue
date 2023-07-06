@@ -68,6 +68,8 @@ const handleSubmit = () => {
       codeURL.value = "";
       emit("closeModal");
     } else {
+      store.commit("createCode", { link: `https://${codeURL.value}` });
+
       setTimeout(() => {
         invalid.value = false;
       }, 3000);

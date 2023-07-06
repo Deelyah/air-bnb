@@ -13,6 +13,7 @@
 </template>
 
 <script setup lang="ts">
+// import { DefineComponent } from 'vue';
 defineProps<{
   btnText: string | number;
   isPrimary: boolean;
