@@ -1,5 +1,5 @@
 <template>
-  <div>
+  <div class="fixed top-0 left-0 right-0 bg-white z-50">
     <div class="py-3.5 px-6 w-full">
       <button class="flex items-center py-2 rounded-full w-full shadow-lg">
         <div class="flex items-center">
@@ -54,7 +54,7 @@
           <RouterLink
             to="/"
             v-for="nav in navigationItems"
-            class="px-2 mx-2 pb-2 border-b-2 border-b-black"
+            class="px-2 mx-2 pb-2"
           >
             <div class="flex flex-col items-center">
               <div class="w-6 h-6">

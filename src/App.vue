@@ -1,9 +1,14 @@
 <script setup lang="ts">
+import TheHeader from "./TheHeader.vue";
+
 // import
 </script>
 
 <template>
   <div class="">
-    <router-view />
+    <the-header />
+    <div class="mt-44">
+      <router-view />
+    </div>
   </div>
 </template>

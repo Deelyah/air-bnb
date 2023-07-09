@@ -1,20 +1,36 @@
 <template>
-  <div>
-    <div class="">
+  <div class="px-6 mb-8">
+    <div class="relative">
+      <button class="absolute flex w-full" @click="toggleLike">
+        <div class="ml-auto p-2 pr-4">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 32 32"
+            aria-hidden="true"
+            role="presentation"
+            focusable="false"
+            :style="isLiked ? likedIcon : unlikedIcon"
+          >
+            <path
+              d="M16 28c7-4.73 14-10 14-17a6.98 6.98 0 0 0-7-7c-1.8 0-3.58.68-4.95 2.05L16 8.1l-2.05-2.05a6.98 6.98 0 0 0-9.9 0A6.98 6.98 0 0 0 2 11c0 7 7 12.27 14 17z"
+            ></path>
+          </svg>
+        </div>
+      </button>
       <img
         src="https://a0.muscache.com/im/pictures/miso/Hosting-29589886/original/6250f7c4-0869-482e-b763-4f9d73046fb1.jpeg?im_w=720"
         alt="place"
-        class="rounded-md"
+        class="rounded-md h-80"
       />
     </div>
-    <div class="flex w-full items-start">
-      <div>
+    <div class="flex w-full items-start mt-2">
+      <div class="">
         <h3 class="font-bold text-[#222]">Teighntenmouth close</h3>
         <p>Individual host</p>
         <p>20-25 Nov</p>
-        <p class="font-bold text-[#222] underline">
+        <button class="font-bold text-[#222] underline">
           $345 <span class="font-normal">total</span>
-        </p>
+        </button>
       </div>
       <div class="flex items-center ml-auto">
         <svg
@@ -37,11 +53,37 @@
 </template>
 
 <script lang="ts">
-import { defineComponent } from "vue";
+import { defineComponent, ref } from "vue";
 
 export default defineComponent({
   setup() {
-    return {};
+    let isLiked = ref(false);
+
+    const likedIcon = `display: block;
+              fill: transparent;
+              height: 24px;
+              width: 24px;
+              stroke: white;
+              stroke-width: 2;
+              overflow: visible;`;
+
+    const unlikedIcon = `display: block;
+              fill: red;
+              height: 24px;
+              width: 24px;
+              stroke: var(--f-mkcy-f);
+              stroke-width: 2;
+              overflow: visible;`;
+
+    const toggleLike = () => {
+      isLiked.value = !isLiked.value;
+    };
+    return {
+      isLiked,
+      likedIcon,
+      unlikedIcon,
+      toggleLike,
+    };
   },
 });
 </script>
