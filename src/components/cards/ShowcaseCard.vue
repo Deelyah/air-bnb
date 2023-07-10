@@ -20,7 +20,7 @@
       <img
         src="https://a0.muscache.com/im/pictures/miso/Hosting-29589886/original/6250f7c4-0869-482e-b763-4f9d73046fb1.jpeg?im_w=720"
         alt="place"
-        class="rounded-md h-80"
+        class="rounded-md min-h-80"
       />
     </div>
     <div class="flex w-full items-start mt-2">
