@@ -7,7 +7,6 @@
 </template>
 
 <script lang="ts">
-import PrimaryBtn from "../../components/buttons/PrimaryBtn.vue";
 import { defineComponent } from "vue";
 // import ShowcaseCard from "../../components/cards/ShowcaseCard";
 import ShowcaseCard from "../../components/cards/ShowcaseCard.vue";
@@ -15,7 +14,7 @@ export default defineComponent({
   setup() {
     return {};
   },
-  components: { PrimaryBtn, ShowcaseCard },
+  components: { ShowcaseCard },
 });
 </script>
 
