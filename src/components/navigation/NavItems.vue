@@ -1,5 +1,5 @@
 <template>
-  <div class="md:pt-2 lg:pt-4">
+  <div class="md:pt-2 lg:pt-4 xl:pt-6">
     <nav class="w-full overflow-auto flex pl-3 shadow-lg">
       <RouterLink to="/" v-for="nav in navigationItems" class="px-2 mx-2 pb-2">
         <div class="flex flex-col items-center">

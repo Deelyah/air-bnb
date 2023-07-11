@@ -148,7 +148,7 @@
     "host": "Individual host",
     "date": "21 Aug - 6 Dec",
     "rating": "4.3",
-    "price": { "perNight": "$80", "cleaningFee": "$20", "serviceFee": "$5" },
+    "price": { "unitPrice": "$80", "cleaningFee": "$20", "serviceFee": "$5" },
     "images": [
       "https://a0.muscache.com/im/pictures/miso/Hosting-29589886/original/6250f7c4-0869-482e-b763-4f9d73046fb1.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-29589886/original/0f26e88f-efad-4f88-8d30-1d304adfbca8.jpeg?im_w=720",
@@ -166,7 +166,7 @@
     "host": "Individual host",
     "date": "21 Aug - 6 Dec",
     "rating": "4.3",
-    "price": { "perNight": "$80", "cleaningFee": "$20", "serviceFee": "$5" },
+    "price": { "unitPrice": "$80", "cleaningFee": "$20", "serviceFee": "$5" },
     "images": [
       "https://a0.muscache.com/im/pictures/miso/Hosting-29589886/original/6250f7c4-0869-482e-b763-4f9d73046fb1.jpeg?im_w=720",
       "https://a0.muscache.com/im/pictures/miso/Hosting-29589886/original/0f26e88f-efad-4f88-8d30-1d304adfbca8.jpeg?im_w=720",

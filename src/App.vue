@@ -8,7 +8,7 @@ import TheHeader from "./TheHeader.vue";
 <template>
   <div class="">
     <the-header />
-    <div class="mt-44">
+    <div class="my-44 lg:mt-52">
       <router-view />
     </div>
     <the-footer />
